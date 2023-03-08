@@ -1,0 +1,30 @@
+.productContainer {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 4px 10px gray;
+    padding: 30px;
+    height: auto;
+}
+
+.productTitle {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.colorCostContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.colors {
+    display: flex;
+}
+
+.colors div {
+    border: 1px solid black;
+}
+

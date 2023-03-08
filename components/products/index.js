@@ -30,17 +30,21 @@ export default function Products({
             <div className={styles.productTitle}>
                 {title}
             </div>
-            <div className={styles.colors}>
-            {
-                Object.keys(color).map((colorOption) => (
-                    <div key={colorOption} style={{ backgroundColor: color[colorOption], width: colorWidth, height: colorHeight, borderRadius: colorBorderRadius }}>
+            <div className={styles.colorCostContainer}>
+                <div className={styles.colors}>
+                {
+                    Object.keys(color).map((colorOption) => (
+                        <div key={colorOption} style={{ backgroundColor: color[colorOption], width: colorWidth, height: colorHeight, borderRadius: colorBorderRadius }}>
 
-                    </div>
-                ))
-            }
-            </div>
-            <div className={styles.cost}>
-                {'$' + cost}
+                        </div>
+                    ))
+                }
+                </div>
+                <div className={styles.cost}>
+                    {
+                        !cost ? <></> : '$' + cost
+                    }
+                </div>
             </div>
         </div>
 

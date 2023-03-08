@@ -1,0 +1,91 @@
+.footerOuterContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
+    background: white;
+    border-top: 3px solid #003c71;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    margin-right: 200px;
+}
+
+.footerColOne {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 44px;
+}
+
+.footerColTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerColTwo a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.footerColTwo a:hover {
+    text-decoration: underline;
+}
+
+.footerColThree {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerColThree a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.footerColThree a:hover {
+    text-decoration: underline;
+}
+
+.footerColFour a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerColFour a:hover {
+    text-decoration: underline;
+}
+
+.allRightsReserved {
+    display: flex;
+    justify-content: flex-end;
+    background: #003c71;
+    color: white;
+    font-size: 11px;
+    padding-right: 50px;
+}
+
+.pbold {
+    font-weight: bold;
+    color: #003c71;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footerColOne {
+        width: 18%;
+    }
+
+    .footerNav {
+        margin-right: 30px;
+    }
+}

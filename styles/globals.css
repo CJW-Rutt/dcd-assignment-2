@@ -1,3 +1,14 @@
 :root {
+    --header-background: #003c71;
+}
 
+* {
+    box-sizing:border-box
+}
+  
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    font-family: 'Golos Text', sans-serif;
 }
