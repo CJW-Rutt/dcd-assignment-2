@@ -1,4 +1,4 @@
-const inventory = {
+export const inventory = {
     'company': 'BCITSA Geared Up',
     'clothing': [
         {
