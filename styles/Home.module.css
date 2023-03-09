@@ -1,21 +1,26 @@
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .bodyContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background: #FAF9F6;
   height: 90vh;
   z-index: 0;
 }
 
+.bodyInnerContainer {
+  display: flex;
+  width: 64vw;
+}
+
 .leftCol {
   width: 200px;
   background: white;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px 30px 30px;
   border-radius: 5px;
   box-shadow: 5px 4px 10px gray;
   margin-top: 50px;
@@ -30,7 +35,7 @@
   max-height: 600px;
   justify-content: center;
   align-items: flex-start;
-  width: 100vw;
+  width: 72vw;
   padding-top: 50px;
 }
 
@@ -50,13 +55,41 @@
   cursor: pointer;
 }
 
+
+
+
 @media only screen and (max-width: 1000px) {
   .bodyContainer {
-    height: 74vh;
+    height: 72vh;
+  }
+
+  .bodyInnerContainer {
+    width: 100vw;
   }
 
   .rightCol {
     grid-template-columns: repeat(2, auto);
     gap: 15px;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .bodyInnerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bodyContainer {
+    height: max-content;
+    display: inline-block;
+  }
+
+  .rightCol {
+    grid-template-columns: repeat(1, auto);
+    height: max-content;
+    margin-bottom: 50px;
+    width: 100vw;
+    max-height: unset;
+    min-height: 600px
+  }  
 }

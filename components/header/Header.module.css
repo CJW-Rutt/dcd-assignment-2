@@ -2,11 +2,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 6.25rem;
-    width: 100vw;
     box-shadow: 0px 2px 10px gray;
     z-index: 1;
+}
+
+.headerInnerContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 450px;
 }
 
 .headerNavigation {
@@ -73,5 +78,15 @@
 @media only screen and (max-width: 1000px) {
     .headerNavigation {
         gap: 0px;
-    }    
+    }  
+    
+    .headerInnerContainer {
+        gap: 35px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .headerNavigation {
+        display: none;
+    }
 }

@@ -12,3 +12,13 @@ body {
     min-height: -webkit-fill-available;
     font-family: 'Golos Text', sans-serif;
 }
+
+#__next {
+    height: 120vh;
+}
+
+@-moz-document url-prefix() {
+    #__next {
+        height: 100vh !important;
+    }
+}

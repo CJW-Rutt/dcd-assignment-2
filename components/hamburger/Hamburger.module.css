@@ -1,0 +1,51 @@
+.hamgurger_container {
+    display: none;
+}
+
+.menu_overlay {
+    position: fixed;
+    top: 97px;
+    right: 0;
+    z-index: 3;
+    padding: 20px;
+    width: 170px;
+    height: 216px;
+    background: white;
+    box-shadow: 10px 14px 11px grey;
+    border-radius: 5px;
+}
+
+.hamgurger_container img {
+    height: 30px;
+    width: 30px;
+    margin-top: 2px;
+}
+
+.menu_overlay h1 {
+    margin-left: 20px;
+    text-align: right;
+    margin: 0;
+}
+
+.menu_overlay ul {
+    list-style: none;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.menu_overlay ul li {
+    margin-top: 15px;
+}
+
+.menu_overlay ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hamgurger_container {
+        display: inline;
+    }
+}
