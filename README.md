@@ -29,4 +29,4 @@ Contains a data file that contains an objects and arrays within detailing produc
 - npm run dev to view site
 - Then localhost:3000/ in your browser
 
-### Grade: 93%
+### Grade: 97.5%
